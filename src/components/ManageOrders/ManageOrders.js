@@ -4,7 +4,7 @@ import '../Header/Header.css'
 
 const ManageOrders = () => {
     const [allOrders, setAllOrders] = useState([])
-    const [isPending, setIspending] = useState(true)
+    const [isPending, setIsPending] = useState(true)
     useEffect(() => {
         fetch('https://agile-wildwood-80919.herokuapp.com/store')
             .then(res => res.json())
@@ -30,7 +30,7 @@ const ManageOrders = () => {
         }
     }
     const handleOrder = () => {
-        setIspending(false)
+        setIsPending(false)
     }
     return (
         <div className='mt-5 pt-2 my-order'>

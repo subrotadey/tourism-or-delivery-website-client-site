@@ -1,4 +1,4 @@
-# Booking.com
+# LPlanet.com
 
 This is booking.com [Live site](https://assignment11-travelling-site-subrota.netlify.app/).
 

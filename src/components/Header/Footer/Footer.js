@@ -7,7 +7,7 @@ const Footer = () => {
     return (
         <div>
             <div >
-                <div className='top-footer  text-white py-5 mt-5'>
+                <div className='top-footer  text-white py-5 '>
                     <h1>Be with Us</h1>
                     <h3>Get healthy service, treatment and solutions to your problems from our experts!</h3>
                 </div>
@@ -19,8 +19,8 @@ const Footer = () => {
                             <hr />
                             <Card.Text>
                                 <p>1675/A, O.R Nizam Road Chittagong Bangladesh</p>
-                                <p> <a href="/">http://cscrbd.com/</a></p>
-                                <p> <a href="/">info@cscrbd.com</a></p>
+                                <p> <a href="/">http://www.LPlanet.com/</a></p>
+                                <p> <a href="/">info@lonelyplanet.com</a></p>
                                 <p>031-656565</p>
                                 <div>
                                     <i className="fab fa-facebook-f px-2 fs-4"></i>
@@ -86,7 +86,7 @@ const Footer = () => {
                     </Col>
                 </Row>
                 <hr />
-            <p> <small className='text-light'>World Famous Travelling Agency &copy; 2021 | All Rights Reserved</small> </p>
+            <p> <small className='text-light'>Lonely Planet Travelling Agency &copy; 2021 | All Rights Reserved</small> </p>
             <p><small>Developed By Subrota@Dey</small></p>
             </div>
         </div>

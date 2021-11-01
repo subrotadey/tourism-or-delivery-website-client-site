@@ -1,6 +1,7 @@
 import React from 'react';
 import { Container, Form, Nav, Navbar } from 'react-bootstrap';
 import './Header.css'
+import logo from '../../images/logo.jpg'
 import { useHistory } from 'react-router';
 import { Link } from 'react-router-dom';
 import useAuth from '../../hooks/useAuth';
@@ -20,10 +21,13 @@ const Header = () => {
             })
     }
     return (
-        <div className='main-header'>
-            <Navbar bg="primary" variant='dark' fixed='top' expand="lg">
+        <div className='main-header py-4'>
+            <Navbar className='nav-color' variant='dark' fixed='top' expand="lg">
                 <Container fluid>
-                    <Navbar.Brand href="/home">Booking.Com</Navbar.Brand>
+                    <Navbar.Brand href="/home" >Lonely Planet
+                    <img className='header-logo-size' src={logo} alt="" />
+                    </Navbar.Brand>
+                    
                     <Navbar.Toggle aria-controls="navbarScroll" />
                     <Navbar.Collapse id="navbarScroll">
                         <Nav
@@ -43,7 +47,7 @@ const Header = () => {
                                 </Nav.Link>}
                         </Nav>
                         <Form className="d-flex">
-                            <Link to='/services'><button className='btn btn-warning m-1'>Book Now</button></Link>
+                            <Link to='/services'><button className='btn btn-success m-1 header-color'>Book Now</button></Link>
                             {user?.email ? <button onClick={handleLogout} className='btn btn-success m-1'>Log out</button> : <Link to='/login'>
                                 <button className='btn btn-primary m-1'>Login</button></Link>}
                         </Form>

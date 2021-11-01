@@ -5,11 +5,17 @@ a{
     background-color: goldenrod;
     color: white;
 }
+.nav-color {
+    background-color: #00224f;
+}
 .main-header a{
    color: honeydew;
 }
+.header-logo-size{
+    width: 60px;
+}
 .banner-img{
-    max-height: 500px;
+    max-height: 700px;
 }
 .offer{
     border-radius: 15px;
@@ -37,7 +43,7 @@ a{
 
     padding-top: 160px;
     padding-bottom: 240px;
-    background-color: skyblue;
+    background-color: rgb(80, 110, 122);
 }
 .login{
     display: flex;

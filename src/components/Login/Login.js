@@ -37,7 +37,7 @@ const Login = () => {
                     <h3>Please login</h3>
                     <input {...register("email", { required: true })} placeholder='Email' />
                     {errors.email && "Email is required"}
-                    <input {...register("password", { required: true })} placeholder='Password' />
+                    <input {...register("password", { required: true })} type='password' placeholder='Password' />
                     {errors.password && "password is required"}
 
                     <input type="submit" value='Login' />
@@ -45,7 +45,7 @@ const Login = () => {
                 </form>
 
             </div>
-            <button className='m-3 btn btn-warning' onClick={handleSignInWithGoogle}><i className="fab fa-google"><small>Sign in with google</small></i></button>
+            <button className='m-3 btn btn-warning' onClick={handleSignInWithGoogle}><i className="fab fa-google p-2 fs-5"><small className='px-2'>Sign in with google</small></i></button>
         </div>
     );
 };
